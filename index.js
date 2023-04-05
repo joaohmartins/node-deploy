@@ -6,6 +6,5 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.listen(3636, () => {
-  console.log("Server is running on port 3636");
-});
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
